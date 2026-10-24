@@ -1,5 +1,6 @@
 
 import 'package:first_project/screens/login_screen.dart';
+import 'package:first_project/screens/practice_login_screen.dart';
 import 'package:flutter/material.dart';
 
 
@@ -14,7 +15,7 @@ class ContainerApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
+      home: PracticeLoginScreen(),
     );
   }
 }

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -17,10 +16,7 @@ class LoginScreen extends StatelessWidget {
           // padding: const EdgeInsets.all(20),
           child: Container(
             width: double.infinity,
-            padding: const EdgeInsets.symmetric(
-              horizontal: 22,
-              vertical: 30,
-            ),
+            padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 30),
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(28),
@@ -88,17 +84,13 @@ class LoginScreen extends StatelessWidget {
                   decoration: InputDecoration(
                     hintText: 'Email address',
                     prefixIcon: const Icon(Icons.email_outlined),
-                    contentPadding: const EdgeInsets.symmetric(
-                      vertical: 20,
-                    ),
+                    contentPadding: const EdgeInsets.symmetric(vertical: 20),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(14),
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(14),
-                      borderSide: const BorderSide(
-                        color: borderColor,
-                      ),
+                      borderSide: const BorderSide(color: borderColor),
                     ),
                   ),
                 ),
@@ -111,20 +103,14 @@ class LoginScreen extends StatelessWidget {
                   decoration: InputDecoration(
                     hintText: 'Password',
                     prefixIcon: const Icon(Icons.lock_outline),
-                    suffixIcon: const Icon(
-                      Icons.visibility_off_outlined,
-                    ),
-                    contentPadding: const EdgeInsets.symmetric(
-                      vertical: 20,
-                    ),
+                    suffixIcon: const Icon(Icons.visibility_off_outlined),
+                    contentPadding: const EdgeInsets.symmetric(vertical: 20),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(14),
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(14),
-                      borderSide: const BorderSide(
-                        color: borderColor,
-                      ),
+                      borderSide: const BorderSide(color: borderColor),
                     ),
                   ),
                 ),
@@ -134,11 +120,7 @@ class LoginScreen extends StatelessWidget {
                 // Remember me and forgot password
                 Row(
                   children: [
-                    const Icon(
-                      Icons.check_box,
-                      color: primaryBlue,
-                      size: 25,
-                    ),
+                    const Icon(Icons.check_box, color: primaryBlue, size: 25),
                     const SizedBox(width: 8),
                     const Text('Remember me'),
                     const Spacer(),
@@ -209,9 +191,7 @@ class LoginScreen extends StatelessWidget {
                     onPressed: () {},
                     style: OutlinedButton.styleFrom(
                       foregroundColor: textColor,
-                      side: const BorderSide(
-                        color: borderColor,
-                      ),
+                      side: const BorderSide(color: borderColor),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(14),
                       ),
@@ -219,11 +199,7 @@ class LoginScreen extends StatelessWidget {
                     child: const Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(
-                          Icons.g_mobiledata,
-                          size: 35,
-                          color: Colors.red,
-                        ),
+                        Icon(Icons.g_mobiledata, size: 35, color: Colors.red),
                         SizedBox(width: 8),
                         Text(
                           'Continue with Google',
